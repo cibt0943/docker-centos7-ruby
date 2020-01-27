@@ -3,17 +3,6 @@ FROM centos:7
 # rubyのバージョンを指定
 ENV RUBY_VERSION="2.7.0"
 
-# # timezone設定
-# RUN timedatectl set-timezone UTC
-
-# # firewall停止
-# RUN systemctl stop firewalld
-# RUN systemctl disable firewalld
-
-# # SELinux停止
-# RUN setenforce 0
-# RUN sed -i -e 's/SELINUX *= *enforcing/SELINUX=disabled/' /etc/selinux/config
-
 # 必要なパッケージをインストール
 RUN yum -y update
 RUN yum -y install git make autoconf wget
