@@ -1,7 +1,7 @@
 FROM centos:7
 
 # rubyのバージョンを指定
-ENV RUBY_VERSION="2.7.5"
+ENV RUBY_VERSION="3.0.3"
 
 # 必要なパッケージをインストール
 RUN yum -y update
